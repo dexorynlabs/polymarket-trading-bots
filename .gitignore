@@ -39,6 +39,8 @@ htmlcov/
 .smoke/
 
 # IDE / OS
+/.githooks/
+/.cursor/rules/
 .vscode/
 .idea/
 .DS_Store
