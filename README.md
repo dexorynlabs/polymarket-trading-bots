@@ -30,7 +30,7 @@ Dedicated copy-trading repos: [English](https://github.com/dexorynlabs/polymarke
 
 Real on-chain runs from the copy bot in this repo - not simulations.
 
-https://github.com/user-attachments/assets/2194ef92-b0f7-40e1-9835-4d2965e85e81
+https://github.com/user-attachments/assets/e62d908d-4dbd-4c7f-93a2-20879baed8da
 
 - **+$80 in ~15 minutes**, bot ran unattended
 - A second session the next day added **+$230** - same code, separate run
@@ -73,17 +73,9 @@ Each bot folder is self-contained with its own README, requirements, and config.
 
 **Dexoryn Labs** - Polymarket trading automation. We run market-making and execution bots on Polymarket every day; the open-source versions here are the cores we're comfortable publishing.
 
-- **Telegram**: [@dexoryn](https://t.me/dexoryn) (fastest)
+- **Telegram**: [@dexoryn](https://t.me/dexoryn)
 - **X**: [@Dexoryn](https://x.com/Dexoryn)
 - **Discord**: `dexoryn_`
-- **GitHub**: [@dexorynLabs](https://github.com/dexorynLabs)
-- **WeChat**: scan to add **DexorynWe**
-
-<p align="center">
-  <img src="public/dexoryn_tg.jpg" alt="Telegram QR code - @dexoryn" height="260"/>
-  &nbsp;&nbsp;
-  <img src="public/dexoryn_wechat.png" alt="WeChat QR code - DexorynWe" height="260"/>
-</p>
 
 ---
 
@@ -96,5 +88,3 @@ See [CONTRIBUTING.md](.github/CONTRIBUTING.md). Community: [Code of Conduct](.gi
 Trading on Polymarket and Kalshi involves **substantial risk of loss**. Dexoryn is not responsible for losses from using this software. You are solely responsible for wallet security, configuration, and capital at risk.
 
 **Only trade with funds you can afford to lose.**
-
-Questions: [@dexoryn](https://t.me/dexoryn) · ⭐ star the repo if it helps.
