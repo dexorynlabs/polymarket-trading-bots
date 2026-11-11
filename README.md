@@ -1,6 +1,6 @@
 # Polymarket Trading Bots | Kalshi Arbitrage · Market Maker · Copy Trading
 
-**Languages:** [English](README.md) · [中文](public/README.zh-CN.md) · [Русский](public/README.ru.md)
+**Languages:** [English](README.md) · [中文](public/README.zh-CN.md) · [Русский](public/README.ru.md) · [Español](public/README.es.md)
 
 > **One repo, five Polymarket bots - built and operated by a team running live market-making on Polymarket.**
 > **Open-source cores • Paper/dry-run first • Real on-chain execution • Python**
@@ -21,8 +21,6 @@
 | **99¢ Sniper Bot** | 🚧 Demo version planned | End-cycle sniper: buys near-certain outcomes at 97–99¢ before resolution to harvest the final cents | [`99c-sniper-bot/`](99c-sniper-bot/) |
 
 **Start here:** the copy trading bot is the finished product. The other four are being released one at a time - watch the repo or follow [@Dexoryn](https://x.com/Dexoryn) for each launch.
-
-Dedicated copy-trading repos: [English](https://github.com/dexorynlabs/polymarket-copy-trading-bot) · [中文](https://github.com/dexoryn-china/polymarket-copy-trading-bot)
 
 ---
 
@@ -76,6 +74,12 @@ Each bot folder is self-contained with its own README, requirements, and config.
 - **Telegram**: [@dexoryn](https://t.me/dexoryn)
 - **X**: [@Dexoryn](https://x.com/Dexoryn)
 - **Discord**: `dexoryn_`
+
+<p align="center">
+  <img src="public/dexoryn_tg.jpg" alt="Telegram QR code - @dexoryn" height="260"/>
+  &nbsp;&nbsp;
+  <img src="public/dexoryn_wechat.png" alt="WeChat QR code - DexorynWe" height="260"/>
+</p>
 
 ---
 
