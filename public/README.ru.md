@@ -73,11 +73,7 @@ python -m app.main
 
 **Dexoryn Labs** - автоматизация торговли на Polymarket. Мы ежедневно запускаем маркет-мейкинг и исполняющих ботов на Polymarket; здесь открыты те ядра, которые мы готовы публиковать.
 
-- **Telegram**: [@dexoryn](https://t.me/dexoryn) (быстрее всего)
-- **X**: [@Dexoryn](https://x.com/Dexoryn)
-- **Discord**: `dexoryn_`
-- **GitHub**: [@dexorynLabs](https://github.com/dexorynLabs)
-- **WeChat**: отсканируйте, чтобы добавить **DexorynWe**
+📱 **Telegram:** [@dexoryn](https://t.me/dexoryn) &nbsp; · &nbsp; 🐦 **X:** [@Dexoryn](https://x.com/Dexoryn) &nbsp; · &nbsp; 🎮 **Discord:** `dexoryn_`
 
 <p align="center">
   <img src="dexoryn_tg.jpg" alt="QR Telegram - @dexoryn" height="260"/>

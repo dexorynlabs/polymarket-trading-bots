@@ -71,9 +71,7 @@ Cada carpeta de bot es independiente y tiene su propio README, archivo de depend
 
 **Dexoryn Labs**: automatización de trading en Polymarket. Operamos bots de market making y ejecución en Polymarket a diario; las versiones de código abierto de este repositorio contienen los núcleos que hemos decidido publicar.
 
-- **Telegram**: [@dexoryn](https://t.me/dexoryn)
-- **X**: [@Dexoryn](https://x.com/Dexoryn)
-- **Discord**: `dexoryn_`
+📱 **Telegram:** [@dexoryn](https://t.me/dexoryn) &nbsp; · &nbsp; 🐦 **X:** [@Dexoryn](https://x.com/Dexoryn) &nbsp; · &nbsp; 🎮 **Discord:** `dexoryn_`
 
 <p align="center">
   <img src="dexoryn_tg.jpg" alt="Código QR de Telegram - @dexoryn" height="260"/>

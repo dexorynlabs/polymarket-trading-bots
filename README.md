@@ -71,9 +71,7 @@ Each bot folder is self-contained with its own README, requirements, and config.
 
 **Dexoryn Labs** - Polymarket trading automation. We run market-making and execution bots on Polymarket every day; the open-source versions here are the cores we're comfortable publishing.
 
-- **Telegram**: [@dexoryn](https://t.me/dexoryn)
-- **X**: [@Dexoryn](https://x.com/Dexoryn)
-- **Discord**: `dexoryn_`
+📱 **Telegram:** [@dexoryn](https://t.me/dexoryn) &nbsp; · &nbsp; 🐦 **X:** [@Dexoryn](https://x.com/Dexoryn) &nbsp; · &nbsp; 🎮 **Discord:** `dexoryn_`
 
 <p align="center">
   <img src="public/dexoryn_tg.jpg" alt="Telegram QR code - @dexoryn" height="260"/>

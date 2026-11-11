@@ -73,11 +73,7 @@ python -m app.main
 
 **Dexoryn Labs** — Polymarket 交易自动化。我们每天在 Polymarket 上运行做市与执行机器人；这里开源的是我们愿意公开的核心部分。
 
-- **Telegram**：[@dexoryn](https://t.me/dexoryn)（回复最快）
-- **X**：[@Dexoryn](https://x.com/Dexoryn)
-- **Discord**：`dexoryn_`
-- **GitHub**：[@dexorynLabs](https://github.com/dexorynLabs)
-- **微信**：扫码添加 **DexorynWe**
+📱 **Telegram：** [@dexoryn](https://t.me/dexoryn) &nbsp; · &nbsp; 🐦 **X：** [@Dexoryn](https://x.com/Dexoryn) &nbsp; · &nbsp; 🎮 **Discord：** `dexoryn_`
 
 <p align="center">
   <img src="dexoryn_tg.jpg" alt="Telegram 二维码 - @dexoryn" height="260"/>
