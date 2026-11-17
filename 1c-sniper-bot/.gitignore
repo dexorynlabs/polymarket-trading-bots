@@ -1,0 +1,11 @@
+/target
+
+# Operator config — never commit secrets
+/config/tickburst.toml
+/config/tickburst.toml.pre-*
+/config/tickburst.toml.bak*
+
+# Runtime output (telemetry, readiness artifacts, dry-run logs)
+/data/
+# the parity fixture is a tracked input; everything else under data/ is runtime output
+!/data/tickburst/
