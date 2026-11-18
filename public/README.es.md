@@ -17,8 +17,8 @@
 | **Bot de copy trading** | ✅ Probado con fondos reales, código abierto | Replica las operaciones de otras carteras en tiempo real: múltiples carteras, mercados de predicción y perpetuos, panel web | [`copy-trading-bot/`](../copy-trading-bot/) |
 | **Bot de arbitraje Polymarket ↔ Kalshi** | 🚧 En desarrollo | Identifica el mismo evento en ambas plataformas y detecta diferencias de precio después de comisiones | [`kalshi-arbitrage-bot/`](../kalshi-arbitrage-bot/) |
 | **Bot de market making** | 🚧 Versión de demostración prevista | Publica cotizaciones de compra y venta con límites de inventario: implementación de referencia de nuestra operativa de market making | [`market-maker-bot/`](../market-maker-bot/) |
-| **Bot sniper de 1¢** | 🚧 Versión de demostración prevista | Busca ofertas de venta cercanas a cero en resultados poco probables y dimensiona pequeñas posiciones | [`1c-sniper-bot/`](../1c-sniper-bot/) |
-| **Bot sniper de 99¢** | 🚧 Versión de demostración prevista | Compra resultados considerados casi seguros a 97–99¢ antes de la resolución para intentar capturar los últimos centavos | [`99c-sniper-bot/`](../99c-sniper-bot/) |
+| **Bot sniper de 1¢** | 🚧 Versión de demostración prevista | Busca ofertas de venta cercanas a cero en resultados poco probables y dimensiona pequeñas posiciones | [`1c-99c-sniper-bot/`](../1c-99c-sniper-bot/) |
+| **Bot sniper de 99¢** | 🚧 Versión de demostración prevista | Compra resultados considerados casi seguros a 97–99¢ antes de la resolución para intentar capturar los últimos centavos | [`1c-99c-sniper-bot/`](../1c-99c-sniper-bot/) |
 
 **Empieza aquí:** el bot de copy trading es el producto terminado. Los otros cuatro se publicarán uno a uno. Sigue el repositorio o a [@Dexoryn](https://x.com/Dexoryn) para conocer cada lanzamiento.
 

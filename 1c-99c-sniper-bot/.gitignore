@@ -1,0 +1,12 @@
+/target
+
+# Secrets — never commit
+/.env
+/config/tickburst.toml
+/config/tickburst.toml.pre-*
+/config/tickburst.toml.bak*
+
+# Runtime output (telemetry, readiness artifacts, dry-run logs).
+# The 1c census fixture is a tracked test input.
+/data/*
+!/data/tickburst/

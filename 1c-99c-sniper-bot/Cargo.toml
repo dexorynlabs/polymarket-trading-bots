@@ -1,0 +1,61 @@
+[package]
+name = "sniperbot"
+version = "0.1.0"
+edition = "2021"
+default-run = "sniperbot"
+publish = false
+description = "Late-slot 1c / 99c sniper for Polymarket btc-updown-5m. SNIPER_MODE picks the side."
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "sniperbot"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync", "time", "signal", "process"] }
+tokio-tungstenite = { version = "0.26", features = ["rustls-tls-native-roots"] }
+tokio-util = { version = "0.7", features = ["rt"] }
+rustls = { version = "0.23", default-features = false, features = ["std"] }
+rustls-native-certs = "0.8"
+futures-util = { version = "0.3", default-features = false, features = ["std"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "gzip", "http2"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+anyhow = "1"
+chrono = { version = "0.4", default-features = false, features = ["clock", "serde"] }
+rand = { version = "0.8", default-features = false, features = ["std", "std_rng"] }
+hdrhistogram = { version = "7", default-features = false }
+alloy-primitives = "0.8"
+alloy-signer = "0.8"
+alloy-signer-local = "0.8"
+alloy-sol-types = "0.8"
+hex = "0.4"
+hmac = "0.12"
+sha2 = "0.10"
+base64 = "0.22"
+async-trait = "0.1"
+thiserror = "1"
+
+[dev-dependencies]
+approx = "0.5"
+tempfile = "3"
+toml = "0.8"
+wiremock = "0.6"
+hex-literal = "0.4"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync", "time", "signal", "process", "test-util"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+
+# Fast-link variant of release for `cargo test --profile release-test`
+# (also what `--live-readiness` runs).
+[profile.release-test]
+inherits = "release"
+lto = "off"
+codegen-units = 16
