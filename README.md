@@ -14,11 +14,11 @@
 
 | Bot | Status | What it does | Folder |
 |-----|--------|--------------|--------|
-| **Copy Trading Bot** | ✅ Live-tested, open source | Mirrors leader wallets in real time - multi-wallet, predictions & perps, web dashboard | [`copy-trading-bot/`](copy-trading-bot/) |
-| **Polymarket ↔ Kalshi Arbitrage Bot** | 🚧 In development | Matches the same event on both venues and surfaces price gaps after fees | [`kalshi-arbitrage-bot/`](kalshi-arbitrage-bot/) |
-| **Market Maker Bot** | 🚧 Demo version planned | Two-sided quoting with inventory limits - reference implementation of our live MM desk | [`market-maker-bot/`](market-maker-bot/) |
-| **1¢ Sniper Bot** | ✅ Live-tested, profitable, open source | Buys the underdog at ~1¢ in BTC 5-minute markets the moment Binance flips toward it - risk 1¢ to win 99¢ | [`1c-99c-sniper-bot/`](1c-99c-sniper-bot/) |
-| **99¢ Sniper Bot** | ✅ Live-tested, profitable, open source | Buys the near-certain winner at 97–99¢ in the final minutes before resolution | [`1c-99c-sniper-bot/`](1c-99c-sniper-bot/) |
+| **Copy Trading Bot** | <sub>✅ Live-tested, open source</sub> | <sub>Mirrors leader wallets in real time - multi-wallet, predictions & perps, web dashboard</sub> | [`copy-trading-bot/`](copy-trading-bot/) |
+| **Polymarket ↔ Kalshi Arbitrage Bot** | <sub>🚧 In development</sub> | <sub>Matches the same event on both venues and surfaces price gaps after fees</sub> | [`kalshi-arbitrage-bot/`](kalshi-arbitrage-bot/) |
+| **Market Maker Bot** | <sub>🚧 Demo version planned</sub> | <sub>Two-sided quoting with inventory limits - reference implementation of our live MM desk</sub> | [`market-maker-bot/`](market-maker-bot/) |
+| **1¢ Sniper Bot** | <sub>✅ Live-tested, profitable, open source</sub> | <sub>Buys the underdog at ~1¢ in BTC 5-minute markets the moment Binance flips toward it - risk 1¢ to win 99¢</sub> | [`1c-99c-sniper-bot/`](1c-99c-sniper-bot/) |
+| **99¢ Sniper Bot** | <sub>✅ Live-tested, profitable, open source</sub> | <sub>Buys the near-certain winner at 97–99¢ in the final minutes before resolution</sub> | [`1c-99c-sniper-bot/`](1c-99c-sniper-bot/) |
 
 **Start here:** the copy trading bot and both snipers are live-tested and profitable. The 1¢ and 99¢ snipers share one Rust engine in [`1c-99c-sniper-bot/`](1c-99c-sniper-bot/); set `SNIPER_MODE=1c` or `99c` in `.env` to pick one. The rest are being released one at a time - watch the repo or follow [@Dexoryn](https://x.com/Dexoryn) for each launch.
 
