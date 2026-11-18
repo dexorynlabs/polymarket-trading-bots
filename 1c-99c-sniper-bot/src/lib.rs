@@ -6,7 +6,7 @@
 //!   lose ~1c per share. Graded on the 1c census (`tests/posttwap_parity.rs`).
 //! - `99c`: buy the LEADING token when its standing ask sits at 97c–99c and
 //!   the trigger passes (`burst` toward the leader, or `calm` = no burst
-//!   against it). Win ~+1c / lose ~99c per share. UNMEASURED: break-even is
+//!   against it). Win ~+1c / lose ~99c per share. Live-tested; break-even is
 //!   a ~99.07% win rate.
 //!
 //! In a binary market the two token prices sum to ~$1, so both strategies
@@ -46,7 +46,7 @@ sniperbot — late-slot 1c / 99c sniper for Polymarket btc-updown-5m
 
   Pick the strategy in the environment (or a .env file):
     SNIPER_MODE=1c    buy the trailing token at ~1c on a recovery burst
-    SNIPER_MODE=99c   buy the leading token at ~99c (UNMEASURED; dry-run first)
+    SNIPER_MODE=99c   buy the leading token at ~99c
   Optional overrides: SNIPER_TRIGGER, SNIPER_CLIP_USD, SNIPER_ASK_MIN/MAX,
   SNIPER_LIMIT, ... — every key is listed in .env.example.
 

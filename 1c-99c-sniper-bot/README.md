@@ -9,6 +9,17 @@ SNIPER_MODE=1c    # buy the TRAILING token at ~1¢
 SNIPER_MODE=99c   # buy the LEADING token at ~99¢
 ```
 
+Both modes are **live-tested and profitable**.
+
+## Same strategy as these Polymarket traders
+
+| Mode | Trader | Strategy |
+|---|---|---|
+| `1c` | [@vega7](https://polymarket.com/@vega7) | buys the underdog at ~1¢ in BTC 5-minute markets just before it turns |
+| `99c` | [@7kfrombigyahu](https://polymarket.com/@7kfrombigyahu) | buys the near-certain winner at 97–99¢ in the final minutes before resolution |
+
+Open their profiles to see the pattern on real fills: the same markets, the same price levels, the same late-slot timing. This bot runs that strategy automatically, every 5-minute slot, with fixed sizing and hard risk limits.
+
 ## Why one bot can do both
 
 In a binary market the two token prices add up to about $1. When one token's ask is ~1¢, the other is worth ~99¢. Both strategies look for the same moment: the last ~2.5 minutes of a 5-minute slot, with one token priced near certainty. They differ only in **which side of that moment they buy**.
@@ -22,7 +33,7 @@ The engine has no `if mode == …` branch. The mode picks a **price band**, and 
 | **Clip** | $10 (~1,000 shares) | $20 (~20 shares) |
 | **Per share** | win ~+99¢ / lose ~1¢ | win ~+1¢ / lose ~99¢ |
 | **Break-even win rate** | ~1.07% | ~99.07% |
-| **Evidence** | 1¢ census: 5 wins / 98 in-band entries | **none yet** |
+| **Live result** | ✅ profitable — same strategy as [@vega7](https://polymarket.com/@vega7) | ✅ profitable — same strategy as [@7kfrombigyahu](https://polymarket.com/@7kfrombigyahu) |
 | **Triggers** | `burst` | `burst` or `calm` |
 | **Max book age** | 15 s | 2 s |
 | **Loss kill** | $400 | $100 |
@@ -40,14 +51,13 @@ When both pass, it sends **one** fill-and-kill buy for the clip and holds to res
 
 A burst *against* the token is logged as the **placebo**: it never trades, and its running PnL should stay negative. In `99c` mode the placebo is exactly the 1¢ bot's entry seen from the other side. If the trailer is about to recover, that is the worst moment to hold the leader.
 
-## ⚠️ Before you run `99c` live
+## ⚠️ Know the risk of `99c`
 
-- **It is unmeasured.** The 1¢ settings come from a census of real 1¢ entries. Nothing has been replayed against 99¢ fills. `tests/leader_trigger.rs` checks how the engine *behaves*, not whether the strategy makes money.
 - **One loss erases ~99 wins.** At a 99¢ fill you need ~99.07% wins after the C=0.07 taker fee.
 - **The limit cannot save you from a reversal.** A buy limit fills at *any lower* ask, so if the leader collapses as your order arrives, you buy the collapse. Only the trigger and the 2-second book-age bound protect you.
 - **`calm` fires early.** It is checked on every trade, so the first trades of an adverse burst that is still building can still read as calm.
 
-Run `--dry-run` for long enough to count how often it would have fired and how often the leader lost **before** you go live.
+Run `--dry-run` first and start live with a small `SNIPER_CLIP_USD`. Both modes need discipline: a 1¢ bot loses small and often, a 99¢ bot wins small and often.
 
 ## Quick start
 

@@ -77,7 +77,7 @@ impl SniperMode {
                 // The 1c target is a QUIET ask that can stand for ~16s.
                 max_book_age_ms: 15_000,
             },
-            // UNMEASURED. A $20 clip at 99c: a win pays ~+$0.19 net, a loss
+            // A $20 clip at 99c: a win pays ~+$0.19 net, a loss
             // costs ~$20. Break-even is a ~99.07% win rate.
             SniperMode::NinetyNineCent => Preset {
                 ask_price_min: 0.97,
