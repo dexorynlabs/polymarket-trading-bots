@@ -1,9 +1,9 @@
-# Bots de trading para Polymarket | Arbitraje con Kalshi · Market making · Copy trading
+# Bots de trading para Polymarket | Sniper de 1¢ y 99¢ · Copy trading · Arbitraje con Kalshi · Market making
 
 **Idiomas:** [English](../README.md) · [中文](README.zh-CN.md) · [Русский](README.ru.md) · [Español](README.es.md)
 
 > **Un repositorio, cinco bots para Polymarket, desarrollados y operados por un equipo que realiza market making en Polymarket con fondos reales.**
-> **Núcleos de código abierto • Simulación primero • Ejecución real en cadena • Python**
+> **Núcleos de código abierto • Simulación primero • Ejecución real en cadena • Python y Rust**
 
 > **¿Necesitas ayuda o una implementación para producción?**
 > 📱 **Telegram**: [t.me/dexoryn](https://t.me/dexoryn) | 🎮 **Discord**: `dexoryn_` | 🐦 **X**: [@Dexoryn](https://x.com/Dexoryn)
@@ -17,10 +17,10 @@
 | **Bot de copy trading** | ✅ Probado con fondos reales, código abierto | Replica las operaciones de otras carteras en tiempo real: múltiples carteras, mercados de predicción y perpetuos, panel web | [`copy-trading-bot/`](../copy-trading-bot/) |
 | **Bot de arbitraje Polymarket ↔ Kalshi** | 🚧 En desarrollo | Identifica el mismo evento en ambas plataformas y detecta diferencias de precio después de comisiones | [`kalshi-arbitrage-bot/`](../kalshi-arbitrage-bot/) |
 | **Bot de market making** | 🚧 Versión de demostración prevista | Publica cotizaciones de compra y venta con límites de inventario: implementación de referencia de nuestra operativa de market making | [`market-maker-bot/`](../market-maker-bot/) |
-| **Bot sniper de 1¢** | 🚧 Versión de demostración prevista | Busca ofertas de venta cercanas a cero en resultados poco probables y dimensiona pequeñas posiciones | [`1c-99c-sniper-bot/`](../1c-99c-sniper-bot/) |
-| **Bot sniper de 99¢** | 🚧 Versión de demostración prevista | Compra resultados considerados casi seguros a 97–99¢ antes de la resolución para intentar capturar los últimos centavos | [`1c-99c-sniper-bot/`](../1c-99c-sniper-bot/) |
+| **Bot sniper de 1¢** | ✅ Probado con fondos reales, rentable, código abierto | Compra el resultado menos probable a ~1¢ en los mercados de BTC de 5 minutos justo cuando Binance gira a su favor: arriesga 1¢ para ganar 99¢ | [`1c-99c-sniper-bot/`](../1c-99c-sniper-bot/) |
+| **Bot sniper de 99¢** | ✅ Probado con fondos reales, rentable, código abierto | Compra al ganador casi seguro a 97–99¢ en los últimos minutos antes de la resolución | [`1c-99c-sniper-bot/`](../1c-99c-sniper-bot/) |
 
-**Empieza aquí:** el bot de copy trading es el producto terminado. Los otros cuatro se publicarán uno a uno. Sigue el repositorio o a [@Dexoryn](https://x.com/Dexoryn) para conocer cada lanzamiento.
+**Empieza aquí:** el bot de copy trading y los dos snipers están probados con fondos reales y son rentables. Los snipers de 1¢ y 99¢ comparten un mismo motor en Rust en [`1c-99c-sniper-bot/`](../1c-99c-sniper-bot/); elige uno con `SNIPER_MODE=1c` o `99c` en `.env`. Los demás se publicarán uno a uno. Sigue el repositorio o a [@Dexoryn](https://x.com/Dexoryn) para conocer cada lanzamiento.
 
 ---
 

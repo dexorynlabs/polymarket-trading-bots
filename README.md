@@ -1,4 +1,4 @@
-# Polymarket Trading Bots | Kalshi Arbitrage · Market Maker · Copy Trading
+# Polymarket Trading Bots | 1¢ & 99¢ Sniper · Copy Trading · Kalshi Arbitrage · Market Maker
 
 **Languages:** [English](README.md) · [中文](public/README.zh-CN.md) · [Русский](public/README.ru.md) · [Español](public/README.es.md)
 
@@ -20,7 +20,7 @@
 | **1¢ Sniper Bot** | <sub>✅ Live-tested, profitable, open source</sub> | <sub>Buys the underdog at ~1¢ in BTC 5-minute markets the moment Binance flips toward it - risk 1¢ to win 99¢</sub> | [`1c-99c-sniper-bot/`](1c-99c-sniper-bot/) |
 | **99¢ Sniper Bot** | <sub>✅ Live-tested, profitable, open source</sub> | <sub>Buys the near-certain winner at 97–99¢ in the final minutes before resolution</sub> | [`1c-99c-sniper-bot/`](1c-99c-sniper-bot/) |
 
-**Start here:** the copy trading bot and both snipers are live-tested and profitable. The 1¢ and 99¢ snipers share one Rust engine in [`1c-99c-sniper-bot/`](1c-99c-sniper-bot/); set `SNIPER_MODE=1c` or `99c` in `.env` to pick one. The rest are being released one at a time - watch the repo or follow [@Dexoryn](https://x.com/Dexoryn) for each launch.
+**Start here:** the copy trading bot and both snipers are live-tested and profitable. The 1 cent and 99 cent sniper bots share one Rust engine in [`1c-99c-sniper-bot/`](1c-99c-sniper-bot/); set `SNIPER_MODE=1c` or `99c` in `.env` to pick one. The rest are being released one at a time - watch the repo or follow [@Dexoryn](https://x.com/Dexoryn) for each launch.
 
 ---
 

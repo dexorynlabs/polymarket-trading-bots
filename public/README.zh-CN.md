@@ -1,9 +1,9 @@
-# Polymarket 交易机器人合集 | Kalshi 套利 · 做市 · 跟单
+# Polymarket 交易机器人合集 | 1 美分 & 99 美分狙击 · 跟单 · Kalshi 套利 · 做市
 
-**语言：** [English](../README.md) · [中文](README.zh-CN.md) · [Русский](README.ru.md)
+**语言：** [English](../README.md) · [中文](README.zh-CN.md) · [Русский](README.ru.md) · [Español](README.es.md)
 
 > **一个仓库，五个 Polymarket 机器人 — 由每天在 Polymarket 上实盘做市的团队构建与运营。**
-> **开源核心 • 默认模拟/干跑 • 真实链上执行 • Python**
+> **开源核心 • 默认模拟/干跑 • 真实链上执行 • Python & Rust**
 
 > **需要帮助或生产版本？**
 > 📱 **Telegram**：[t.me/dexoryn](https://t.me/dexoryn) | 🎮 **Discord**：`dexoryn_` | 🐦 **X**：[@Dexoryn](https://x.com/Dexoryn)
@@ -17,10 +17,10 @@
 | **跟单机器人** | ✅ 实盘验证，已开源 | 实时镜像领头钱包 — 多钱包、预测市场与永续、Web 仪表盘 | [`copy-trading-bot/`](../copy-trading-bot/) |
 | **Polymarket ↔ Kalshi 套利机器人** | 🚧 开发中 | 匹配两个平台上的同一事件，计算扣费后的价差 | [`kalshi-arbitrage-bot/`](../kalshi-arbitrage-bot/) |
 | **做市机器人** | 🚧 演示版计划中 | 双边报价 + 库存限制 — 我们实盘做市系统的参考实现 | [`market-maker-bot/`](../market-maker-bot/) |
-| **1 美分狙击机器人** | 🚧 演示版计划中 | 扫描冷门结果的极低价卖单，小仓位尾部入场 | [`1c-99c-sniper-bot/`](../1c-99c-sniper-bot/) |
-| **99 美分狙击机器人** | 🚧 演示版计划中 | 周期末狙击：在结算前以 97–99 美分买入近乎确定的结果，收割最后几美分 | [`1c-99c-sniper-bot/`](../1c-99c-sniper-bot/) |
+| **1 美分狙击机器人** | ✅ 实盘验证，盈利，已开源 | 在 BTC 5 分钟市场中，当 Binance 行情转向时以约 1 美分买入落后的一方 — 风险 1 美分，博取 99 美分 | [`1c-99c-sniper-bot/`](../1c-99c-sniper-bot/) |
+| **99 美分狙击机器人** | ✅ 实盘验证，盈利，已开源 | 在结算前最后几分钟以 97–99 美分买入近乎确定获胜的一方 | [`1c-99c-sniper-bot/`](../1c-99c-sniper-bot/) |
 
-**从这里开始：** 跟单机器人是已完成的产品，其余四个将逐个发布 — 关注本仓库或 [@Dexoryn](https://x.com/Dexoryn) 获取每次发布。
+**从这里开始：** 跟单机器人和两个狙击机器人均已实盘验证并盈利。1 美分与 99 美分狙击机器人共用 [`1c-99c-sniper-bot/`](../1c-99c-sniper-bot/) 中的同一个 Rust 引擎，在 `.env` 中设置 `SNIPER_MODE=1c` 或 `99c` 即可切换。其余机器人将逐个发布 — 关注本仓库或 [@Dexoryn](https://x.com/Dexoryn) 获取每次发布。
 
 独立跟单仓库：[中文版](https://github.com/dexoryn-china/polymarket-copy-trading-bot) · [English](https://github.com/dexorynlabs/polymarket-copy-trading-bot)
 

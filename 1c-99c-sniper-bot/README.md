@@ -2,7 +2,7 @@
 
 > Part of the [Polymarket Trading Bots](../README.md) pack
 
-A late-slot taker for Polymarket `btc-updown-5m`. One engine runs two opposite strategies, and you pick one with a single environment variable:
+An open-source **Polymarket 1 cent and 99 cent sniper bot** for the BTC 5-minute up/down markets (`btc-updown-5m`), written in Rust. One engine runs two opposite strategies, and you pick one with a single environment variable:
 
 ```bash
 SNIPER_MODE=1c    # buy the TRAILING token at ~1¢
@@ -167,6 +167,26 @@ cargo test --profile release-test
 ```
 
 Tests marked `#[ignore]` need a live network.
+
+## FAQ
+
+**How does a Polymarket 1 cent (1¢) bot work?**
+Late in a BTC 5-minute market, the losing token often trades at about 1¢. The bot waits until that token's best ask is 0.9–1.1¢ and Binance prints a burst of BTC trades back toward it, then buys once. If the market flips, each share pays ~$1; if not, it loses ~1¢.
+
+**How does the Polymarket 99 cent (99¢) strategy work?**
+The bot buys the token that is almost certain to win, at 97–99¢, in the last ~2.5 minutes before resolution, and holds it to $1. Each win is about 1¢ per share, so it depends on a very high win rate: one loss costs about 99 wins.
+
+**Which markets does it trade?**
+Polymarket's BTC 5-minute up/down markets (`btc-updown-5m`). Other coins are not supported yet; PRs are welcome.
+
+**Do I need a wallet or API keys to try it?**
+No. `--dry-run` reads live Polymarket and Binance data and logs every decision without sending orders. Keys are only needed for `--live`.
+
+**What do I need to go live?**
+A Polymarket account funded with pUSD, its proxy wallet address and private key, and a CLOB API key. They go in `.env` as the `POLY_*` variables.
+
+**Can I run the 1¢ and 99¢ modes at the same time?**
+Yes, as two processes with separate wallets and working directories. They buy opposite tokens, so they never compete.
 
 ---
 

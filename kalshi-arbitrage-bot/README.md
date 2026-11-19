@@ -2,7 +2,7 @@
 
 > Part of the [Polymarket Trading Bots](../README.md) pack · **Status: 🚧 in development**
 
-Cross-venue arbitrage scanner and executor for **Polymarket** and **Kalshi**. The bot matches the same real-world event listed on both venues, pulls both order books, and reports price gaps after fees - then (optionally) executes both legs.
+An open-source **Polymarket Kalshi arbitrage bot**: a cross-venue arbitrage scanner and executor for the two largest prediction markets, **Polymarket** and **Kalshi**. The bot matches the same real-world event listed on both venues, pulls both order books, and reports price gaps after fees - then (optionally) executes both legs.
 
 Both venues are regulated US markets with KYC. This bot does not bypass any of that; you need your own accounts.
 
@@ -34,6 +34,20 @@ Want the production build or custom work? [Telegram @dexoryn](https://t.me/dexor
 ## Quick start
 
 Coming with the first release. The folder will be self-contained: `requirements.txt`, `config.yaml.example`, and a `python -m` entry point.
+
+## FAQ
+
+**How does Polymarket–Kalshi arbitrage work?**
+The same event is often listed on both prediction markets at different prices. If YES on one venue plus NO on the other costs less than $1 after fees, buying both locks in the difference when the event resolves.
+
+**Is prediction market arbitrage risk-free?**
+No. The two venues can word or resolve the same event differently, one leg can fill while the other does not, and fees can eat a thin spread. The paper mode exists to measure those risks before any capital is used.
+
+**Do I need accounts on both Polymarket and Kalshi?**
+For the scanner, no: it reads public order books. For live execution you need your own funded, verified account on each venue.
+
+**When will the Kalshi arbitrage bot be released?**
+The scanner ships first, then paper trading, then gated live execution. Watch the repo or follow [@Dexoryn](https://x.com/Dexoryn).
 
 ---
 
